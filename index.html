@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Business Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Transport Business Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Routes</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Vehicles</h3>
+                    <p id="totalVehicles">25</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Routes</h3>
+                    <p id="activeRoutes">8</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Today's Bookings</h3>
+                    <p id="todaysBookings">12</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+                <button onclick="loadSection('fleet')">Manage Fleet</button>
+                <button onclick="loadSection('routes')">View Routes</button>
+                <button onclick="loadSection('bookings')">New Booking</button>
+                <button onclick="loadSection('reports')">Generate Report</button>
+            </div>
+        </section>
+
+        <section id="content-section">
+            <!-- Dynamic content will be loaded here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Transport Business Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
